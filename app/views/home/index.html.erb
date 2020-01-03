@@ -1,1 +1,6 @@
-<h1>Ruby On Braille</h1>
+<p>Enter text below and click 'Transform' to generate the matching text in Braille.</p>
+
+<%= form_tag do %>
+  <%= text_area_tag 'text' %><br />
+  <%= submit_tag 'Transform' %>
+<% end %>
