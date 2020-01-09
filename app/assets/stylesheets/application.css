@@ -104,7 +104,6 @@ input {
 }
 
 .braille_button {
-  content: '⠞⠗⠁⠝⠎⠋⠕⠗⠍';
   color: black;
   background-color: white;
 }
