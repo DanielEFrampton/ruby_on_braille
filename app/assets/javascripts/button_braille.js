@@ -1,5 +1,5 @@
 window.onload = function() {
-  const button = document.getElementById('transform-button');
+  let button = document.getElementById('transform-button');
   button.onmouseover = changeTextToBraille;
   button.onmouseout = changeTextToEnglish;
 

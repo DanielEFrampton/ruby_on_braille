@@ -114,3 +114,23 @@ input {
   border: black dotted 2px;
   font-size: 2em;
 }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: .75em;
+    width: 90%;
+  }
+
+  header {
+    font-size: .9em;
+  }
+
+  navbar {
+    font-size: .9em;
+  }
+
+  main {
+    width: 90%;
+  }
+}
