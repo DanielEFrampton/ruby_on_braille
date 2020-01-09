@@ -6,7 +6,7 @@ RSpec.describe BrailleTransformer, type: :model do
       it 'can take an english string and return same string in grade 1 braille' do
         string = "Hello, World!"
         transformer = BrailleTransformer.new(string)
-        expected = "⠠⠓⠑⠇⠇⠕⠠⠀⠠⠺⠕⠗⠇⠙⠮"
+        expected = "⠠⠓⠑⠇⠇⠕⠂ ⠠⠺⠕⠗⠇⠙⠖"
         expect(transformer.grade_1_braille).to eq(expected)
       end
     end

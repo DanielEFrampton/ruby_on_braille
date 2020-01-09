@@ -48,7 +48,7 @@ RSpec.describe 'As a visitor', type: :feature do
       end
 
       it 'I should see the Braille corresponding to my text' do
-        unicode_string = '⠠⠓⠑⠇⠇⠕⠠⠀⠠⠺⠕⠗⠇⠙⠮'
+        unicode_string = '⠠⠓⠑⠇⠇⠕⠂ ⠠⠺⠕⠗⠇⠙⠖'
         expect(page).to have_content(unicode_string)
       end
     end
