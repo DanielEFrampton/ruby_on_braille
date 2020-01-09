@@ -42,13 +42,13 @@ RSpec.describe 'As a visitor', type: :feature do
 
     describe 'and I enter text into the text area and click submit' do
       before(:each) do
-        fill_ in 'text', with: 'Hello, World!'
+        fill_in 'text', with: 'Hello, World!'
 
         click_on('Transform')
       end
 
       it 'I should see the Braille corresponding to my text' do
-        unicode_string = ''
+        unicode_string = '⠠⠓⠑⠇⠇⠕⠠⠀⠠⠺⠕⠗⠇⠙⠮'
         expect(page).to have_content(unicode_string)
       end
     end
