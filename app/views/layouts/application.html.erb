@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RubyOnBrailles</title>
+    <title>Ruby On Braille</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,11 +11,15 @@
 
   <body>
     <header>
-      <h1><span id='english-header'>Ruby On Braille</span> &#x2820;&#x2817;</h1>
+      <h1>
+        <span id='english-header'>Ruby On Braille</span><br />
+        <span id='braille-header'>⠠⠗⠥⠃⠽⠀⠠⠕⠝⠀⠠⠃⠗⠁⠊⠇⠇⠑</span>
+      </h1>
     </header>
     <navbar>
       <%= link_to 'Home', '/' %>
       <%= link_to 'About', '/about' %>
+      <%= link_to 'Github', 'https://github.com/DanielEFrampton/ruby_on_braille' %>
       <%= link_to 'Developer', 'https://danieleframpton.github.io' %>
     </navbar>
     <main>
