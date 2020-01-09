@@ -1,6 +1,12 @@
 <p>Enter text below and click 'Transform' to generate the matching text in Braille.</p>
 
-<%= form_tag do %>
+<%= form_tag '/', method: :post do %>
   <%= text_area_tag 'text' %><br />
-  <%= submit_tag 'Transform' %>
+  <%= submit_tag 'Transform', id: 'transform-button' %>
+<% end %>
+
+<% if @braille %>
+  <section id='braille_output'>
+    <p><%= @braille.grade_1_braille %></p>
+  </section>
 <% end %>

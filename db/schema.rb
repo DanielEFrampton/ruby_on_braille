@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200103171545) do
+ActiveRecord::Schema.define(version: 20200103185556) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20200103171545) do
   create_table "english_brailles", force: :cascade do |t|
     t.bigint "braille_symbol_id"
     t.bigint "english_character_id"
+    t.integer "position", default: 0
     t.index ["braille_symbol_id"], name: "index_english_brailles_on_braille_symbol_id"
     t.index ["english_character_id"], name: "index_english_brailles_on_english_character_id"
   end

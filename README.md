@@ -1,4 +1,4 @@
-# Ruby On Brailles
+# Ruby On Braille
 
 A student project by Daniel Frampton, implementing Turing's [Night Writer](https://backend.turing.io/module1/projects/night_writer) English-to-Braille project in Rails.
 
@@ -14,7 +14,7 @@ In addition to strengthening my Ruby and Rails skills, I hope to gain experience
 
 The major features planned for this project are:
 
-- A web interface for inputting text and seeing the transliterated results in Braille. 
+- A web interface for inputting text and seeing the transliterated results in Braille.
 - The ability to export the transliterated text to a file format that supports Unicode.
 - 100% support for Grade I Braille.
 - As much support as time allows for Grade II Braille (i.e., contractions) according to Unified English Braille rules.

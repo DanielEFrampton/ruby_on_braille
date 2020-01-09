@@ -1,7 +1,25 @@
 <h1>About</h1>
 
+Ruby On Brailles is a student project by <%= link_to 'Daniel Frampton', 'https://danieleframpton.github.io/' %>, implementing <%= link_to 'Turing', 'https://turing.io' %>'s <%= link_to 'Night Writer', 'https://backend.turing.io/module1/projects/night_writer' %> English-to-Braille project in Rails.
+
+<h2>Difference from Original Project</h2>
+<p>In the original Night Writer project, Ruby was exclusively used to create a command-line interface for input/output, taking in strings of English and outputting lines of zeros and periods to a file to resemble Braille. In this adaptation of that project, Rails will be used to create a web interface to handle input/output; Unified English Braille will be the standard for translation; and Unicode symbols for Braille will be used to display the results.</p>
+
+<h2>Goals for the Project</h2>
+<p>In addition to strengthening my Ruby and Rails skills, I hope to gain experience with translation/transliteration between languages and writing systems, which is an avid interest of mine. I also hope to use the website to draw attention to issues of accessibility and literacy as they pertain to to people with vision disabilities.</p>
+
+<h2>Planned Features</h2>
+<p>The major features planned for this project are:<p>
+<ul>
+<li>A web interface for inputting text and seeing the transliterated results in Braille.</li>
+<li>The ability to export the transliterated text to a file format that supports Unicode.</li>
+<li>100% support for Grade I Braille.</li>
+<li>As much support as time allows for Grade II Braille (i.e., contractions) according to Unified English Braille rules.</li>
+</ul>
+
 <h2>Works Referenced</h2>
 
 <ul>
   <li><%= link_to 'The Rules of Unified English Braille - Second Edition 2013', "http://www.iceb.org/Rules%20of%20Unified%20English%20Braille%202013%20(linked).pdf" %></li>
+  <li><%= link_to 'List of Characters in American Literary Braille', 'http://interglacial.com/~sburke/braille/table.html' %></li>
 </ul>
