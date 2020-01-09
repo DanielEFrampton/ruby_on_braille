@@ -55,7 +55,6 @@ class BrailleTransformer
       'Y' => '⠠⠽',
       'Z' => '⠠⠵',
       # symbols
-      ' ' => '⠀',
       '.' => '⠨',
       ',' => '⠠',
       '?' => '⠹',
@@ -99,7 +98,7 @@ class BrailleTransformer
 
   def grade_1_braille
     @string.chars.map do |eng_char|
-      @dictionary[eng_char]
+      @dictionary[eng_char] || eng_char
     end.join
   end
 end
